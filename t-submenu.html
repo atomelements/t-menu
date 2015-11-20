@@ -73,6 +73,10 @@ Example:
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
     transform: rotate(180deg);
  }
+ 
+ :host([aria-selected]) > #label ::content label {
+    font-weight: bold;
+ }
 </style>
 <template>
     <t-item class="flex-1" id="label" label$="{{label}}" on-click="_toggleCollapse"> </t-item>
